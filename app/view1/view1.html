@@ -1,0 +1,12 @@
+<div class="" ng-controller="View1Ctrl">
+  <div class="alert alert-danger" ng-show="message">{{ message }}</div>
+  <div class="well">
+    <div>
+      <label for="">Original URL:</label>
+    </div>
+    <div>
+      <input type="text" ng-model="url0" class="form-control" name="url" id="id_url" value="{{ url0 }}" placeholder="http://long-as-hell-url/with-paths/"/>
+      <button type="button" class="btn btn-primary btn-medium" ng-click="validateURL(url0)">Shrink It Now!</button>
+    </div>
+  </div>
+</div>
