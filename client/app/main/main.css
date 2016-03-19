@@ -1,0 +1,73 @@
+.thing-form {
+  margin: 20px 0;
+}
+
+#banner {
+  border-bottom: none;
+  margin-top: -20px;
+}
+
+#banner h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.hero-unit {
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #4393B9;
+}
+
+.navbar-text {
+  margin-left: 15px;
+}
+
+form > div {
+  margin-bottom: 10px;
+}
+
+form button,
+form .btn {
+    margin-top: 10px; 
+}
+
+.url-form {
+  display: inline-block;
+}
+
+form label,
+form a,
+form span {
+  line-height: 30px;
+}
+
+.invalid-key {
+  display: none;
+  margin-left: 10px;
+  color: #ff5555;
+}
+
+.mini-url {
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+.mini-url .glyphicon {
+  margin-right: 10px;
+}
+
+.content {
+  margin: 30px 0;
+}
+
+.form-actions > div {
+  padding: 0;
+}
+
+.view-content {
+  margin-top: 30px;
+}

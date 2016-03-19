@@ -1,0 +1,21 @@
+<div class="view-content well">
+  <div id="msg" class="alert" ng-show="$ctrl.message">{{ $ctrl.message }}</div>
+  <form class="" class="url-form" action="http://127.0.0.1:3000/make" method="post">
+    <div class="form-controls row">
+      <label class="col-md-1">URL:</label>
+      <input class="col-md-10" type="text" ng-model="url0" name="url" id="id_url" value="{{ url0 }}" placeholder="http://long-as-hell-url.com/with-paths/"/>
+    </div>
+    <div class="form-controls row">
+      <label class="col-md-1" >Key:</label>
+      <input class="col-md-2" type="text" ng-model="key" name="key" id="id_key" value="{{ key }}" placeholder=""/>
+      <a class="mini-url" target="blank" ng-show="miniURL" ng-href="{{ miniURL }}"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>{{ miniURL }}</a>
+      <span class="invalid-key">Key duplicated. Please select different value.</span>
+    </div>
+    <div class="row form-actions">
+      <div class="col-md-5 col-md-offset-1">
+        <button ng-show="notReady" type="button" class="btn btn-primary btn-medium" ng-click="$ctrl.validateURL(url0)">Shrink That</button>
+        <button ng-hide="notReady" type="button" class="btn btn-default btn-medium" ng-click="$ctrl.reset()"><span class="glyphicon glyphicon-repeat"></span>&nbsp;&nbsp;Make New One</button>
+      </div>
+    </div>
+  </form>
+</div>
